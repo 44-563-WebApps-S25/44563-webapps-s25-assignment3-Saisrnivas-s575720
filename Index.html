@@ -11,5 +11,88 @@
     <p>I love<strong>chicken biryani</strong>because it’s <strong>spicy</strong> and <strong>flavourfull</strong> ! It can go  well with as staple food .Place I come form is <strong>famous</strong> for this dish.</p>
 
 
+    <hr>
+    <h3> How to make chicken biryani </h3>
+
+  <ol>
+    <li>Take rice and boil it.</li>
+    <li> Cook the chicken well in spices and masala.</li>
+    <li> Add rice to the cooked chicken and let it boil.</li>
+    <li> Take it off and mix and stir it well</li>
+  </ol>  
+  <h3>Sides with Chicken biryani</h3>
+  <ul>
+      <li>Fried chicken</li>
+      <li>Mayo</li>
+      <li>Curry</li>
+      <lI>Raita</lI>
+      <ul>
+           <li>Yogurt</li>
+           <li>Cucumber</li>
+      </ul>
+      <li>Boiled Egg</li>
+      <li>Salad</li>
+  </ul>
+
+  <a href="myMovie.html">My favorite movie</a>
+  <hr>
+  <h3>Actors who can play the role</h3>
+  <p>Here are some actors I think would do well:</p>
+
+  <table border="1">
+      <tr>
+          <th>Actor Name</th>
+          <th>Reason</th>
+          <th>Age</th>
+      </tr>
+      <tr>
+          <td>RDJ</td>
+          <td>Great at intense roles.</td>
+          <td>46</td>
+      </tr>
+      <tr>
+          <td>CHRIS HEMSWORTH</td>
+          <td>Versatile acting with emotional depth.</td>
+          <td>43</td>
+      </tr>
+      <tr>
+          <td>Cillian Murphy</td>
+          <td>Exceptional at portraying complex characters.</td>
+          <td>47</td>
+      </tr>
+      <tr>
+          <td>Mreyl Streep</td>
+          <td>Known for his powerful and transformative performances</td>
+          <td>49</td>
+      </tr>
+  </table>
+  <h3>SQL Code Snippet</h3>
+<p>This snippet demonstrates how to parse CSV data and store it in a list of dictionaries using python .:</p>
+
+<pre>
+    import csv
+
+    def parse_csv_data(csv_path):
+        csv_mapping_list = []
+    
+        with open(csv_path) as my_data:
+            csv_reader = csv.reader(my_data, delimiter=",")
+            line_count = 0
+            for line in csv_reader:
+                if line_count == 0:
+                    header = line
+                else:
+                    row_dict = {key: value for key, value in zip(header, line)}
+                    csv_mapping_list.append(row_dict)
+                line_count += 1 
+</pre>
+
+<p>Source: <a href="https://code.pieces.app/collections" target="_blank">Code Snippet Collection</a></p>
+
+
+
+</body>
+</html>
+
 </body>
 </html>
